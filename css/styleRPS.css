@@ -1,0 +1,57 @@
+body {
+  background: #9c835f;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.option-computer input {
+  pointer-events: none;
+}
+
+.content {
+  height: 70vh;
+}
+
+/* animations */
+
+@keyframes spin180 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes player-options-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* animation */
+.refresh-button:hover {
+  animation: spin180 1s linear infinite;
+}
+
+.option-player .rock:hover {
+  animation: player-options-animation 1s linear infinite;
+}
+.option-player .paper:hover {
+  animation: player-options-animation 1s linear infinite;
+}
+.option-player .scissors:hover {
+  animation: player-options-animation 1s linear infinite;
+}

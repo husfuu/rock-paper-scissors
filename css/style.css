@@ -1,0 +1,257 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*============== Media query ==============*/
+
+/* Small */
+@media only screen and (max-width: 768px) {
+  /* Write Something Here*/
+
+  /* Section 4 */
+  #section4 h3 {
+    font-size: 18px;
+  }
+  #section4 p {
+    font-size: 15px;
+  }
+
+  /* section 5 */
+  #section5 .container .row .column1,
+  .column2 {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Section 6 */
+  #section6 img {
+    width: 300px;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #section3 {
+    background-position: right;
+  }
+}
+
+/* Medium */
+@media only screen and (min-width: 768px) {
+  /* section 1 */
+  #section1 .jumbotron .content h1 {
+    font-size: 40px;
+  }
+  #section1 .jumbotron .content p {
+    font-size: 15px;
+  }
+  /* section 2 */
+  #section2 .title-game h2 {
+    font-size: 40px;
+  }
+
+  #section2 .title-game p {
+    font-size: 18px;
+  }
+}
+
+/* Large  untuk iPad Pro*/
+@media only screen and (min-width: 992px) {
+  /* Write Something Here*/
+
+  /* Section 2 */
+  .carousel {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-inner {
+    width: 80%;
+  }
+
+  /* section 3 */
+  #section3 p {
+    font-size: 20px;
+  }
+}
+
+/* Extra Large */
+@media only screen and (min-width: 1200px) {
+  /* Write Something Here*/
+  /* section 1 */
+  #section1 .jumbotron .content h1 {
+    font-size: 72px;
+  }
+  #section1 .jumbotron .content p {
+    font-size: 24px;
+  }
+  #section1 .jumbotron .scrolldown p {
+    font-size: 18px;
+  }
+  #section1 .jumbotron .scrolldown img {
+    width: 30px;
+  }
+
+  /* section 2 */
+  #section2 .title-game h2 {
+    font-size: 56px;
+  }
+
+  #section2 .title-game p {
+    font-size: 24px;
+  }
+
+  #section4 p {
+    font-size: 20px;
+  }
+
+  /* section 5 */
+  #section5 h1 {
+    font-size: 50px;
+  }
+
+  #section5 h5 {
+    font-size: 30px;
+  }
+  #section5 h6 {
+    font-size: 25px;
+  }
+
+  #section5 p {
+    font-size: 20px;
+  }
+}
+
+/* Extra Extra Large */
+@media only screen and (min-width: 1400px) {
+  /* Write Something Here*/
+  #section1 .jumbotron .content h1 {
+    font-size: 72px;
+  }
+  #section1 .jumbotron .content p {
+    font-size: 24px;
+  }
+}
+
+/* END MEDIA QUERY */
+
+/* TIME LINE */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+/* END TIME LINE */
+
+p {
+  word-spacing: 3px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-that-centering-y-axis {
+  display: flex;
+  flex-direction: column;
+  /* karena flex direction: column maka pake justify-content (bukan align-item) 
+  untuk meletakan element di tengah secara vertical */
+  justify-content: center;
+}
+
+.container-that-centering-both-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section1 {
+  width: 100%;
+  background: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090a 99.74%), url('../assets/main-bg.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+#section1 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+#section2 {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080a0b 99.74%), url('../assets/the-games-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#section3 {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../assets/features.jpg);
+  background-size: cover;
+}
+
+#section4 {
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080a0b 99.74%), url('../assets/requirements.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#section5 {
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(35, 15, 15, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080a0b 99.74%), url('../assets/bg image 5.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#section6 {
+  background: #080a0b;
+  width: 100%;
+  min-height: 70vh;
+}
+
+footer {
+  background: #080a0b;
+}
